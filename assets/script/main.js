@@ -33,22 +33,14 @@ $(function () {
         var key = localStorage.getItem(timeSlot);
         schedule.children().eq(i).children('input').val(key);
         console.log(timeSlot + ":" + key);
-        
+        //adding the classes for past, present, future
+        //changing the time format to int because it was returning as string and not calculating if statements correctly
         if(parseInt(currentTime.format("H")) == timeSlot){
             currentSlot.addClass("present");
-            console.log("true");
         } else if(parseInt(currentTime.format("H")) > timeSlot){
             currentSlot.addClass("past");
-            console.log("false");
         } else if(parseInt(currentTime.format("H")) < timeSlot){
             currentSlot.addClass("future");
-            console.log("true");
         }
-        console.log(timeSlot);
-        console.log(parseInt(currentTime.format("H")));
     }
-
-    
-    
-
 });
