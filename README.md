@@ -3,7 +3,7 @@
 A simple calendar app for scheduling your work day.
 
 ## Getting Started
-
+Live Site:  https://chadbowler.github.io/daily-planner/
 ## Screenshot
 
 ![Daily Work Planner](https://github.com/ChadBowler/daily-planner/assets/127648744/aacfb35d-7586-43b4-98b0-4cc89a0171d9)
