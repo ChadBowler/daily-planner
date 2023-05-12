@@ -32,7 +32,6 @@ $(function () {
         var currentSlot = schedule.children().eq(i).children();
         var key = localStorage.getItem(timeSlot);
         schedule.children().eq(i).children('input').val(key);
-        console.log(timeSlot + ":" + key);
         //adding the classes for past, present, future
         //changing the time format to int because it was returning as string and not calculating if statements correctly
         if(parseInt(currentTime.format("H")) == timeSlot){
